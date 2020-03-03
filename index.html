@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<head>    
+<head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
     <script src="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.js"></script>
@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
-    
+
     <meta name="viewport" content="width=device-width,
         initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <style>#map_80f7e0353f784a3c8eb115ed1017603b {
@@ -26,15 +26,15 @@
         }
     </style>
 </head>
-<body>    
-    
+<body>
+
     <div class="folium-map" id="map_80f7e0353f784a3c8eb115ed1017603b" ></div>
 </body>
-<script>    
-    
-    
+<script>
+
+
         var bounds = null;
-    
+
 
     var map_80f7e0353f784a3c8eb115ed1017603b = L.map(
         'map_80f7e0353f784a3c8eb115ed1017603b', {
@@ -48,7 +48,7 @@
         });
 
 
-    
+
     var tile_layer_204fc11a0fe846c2b96f59ddef4cdfd8 = L.tileLayer(
         'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
         {
@@ -75,7 +75,7 @@
         "subdomains": "abc",
         "tms": false
 }).addTo(map_80f7e0353f784a3c8eb115ed1017603b);
-    
+
             var layer_control_893722daece24b67a9c7bafd34e24f7b = {
                 base_layers : { "openstreetmap" : tile_layer_204fc11a0fe846c2b96f59ddef4cdfd8, },
                 overlays : { "DEM" : tile_layer_f546a3367adb412fb4f501b40f62e704, }
@@ -87,6 +87,6 @@
                  collapsed: true,
                  autoZIndex: true
                 }).addTo(map_80f7e0353f784a3c8eb115ed1017603b);
-            
-        
+
+
 </script>
