@@ -2,7 +2,15 @@
 
 Respository for Leaflet interactive map
 
-Access Interactive Map @ http://tpmccrea.github.io/GradStudentShowcase/
+Contains: 
+* Index file - HTML Code for the interactive map 
+* GoogleColab Jupyter Notebook used to create map
 
-* Index file contains HTML Code for map 
-* GoogleColab Jupyter Notebook also included
+* Interactive Map made using the Folium Library
+  * Access Interactive Map @ http://tpmccrea.github.io/GradStudentShowcase/
+  * Containts Two Layers: 
+    * Global Surface Temperature (9/1/2018)
+    * Mean Aerosol Optical Depth (9/1/2018)
+    
+   
+
