@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>#map_0c91fa2c9abf437e8e7a8af1a2a5d061 {
+        position: relative;
+        width: 100.0%;
+        height: 1000.0px;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_0c91fa2c9abf437e8e7a8af1a2a5d061" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_0c91fa2c9abf437e8e7a8af1a2a5d061 = L.map(
+        'map_0c91fa2c9abf437e8e7a8af1a2a5d061', {
+        center: [20, 0],
+        zoom: 3,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+
+    
+    var tile_layer_c9e47c9ab9df408b9588497284753c13 = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_0c91fa2c9abf437e8e7a8af1a2a5d061);
+    var tile_layer_d80d81c9ea10419b99154b1d79f11e05 = L.tileLayer(
+        'https://earthengine.googleapis.com/v1alpha/projects/earthengine-legacy/maps/71ddf1cbdc6bdae44212ce1746db31f1-b73d87919555238d387074554340083e/tiles/{z}/{x}/{y}',
+        {
+        "attribution": "Map Data \u00a9 Google Earth Engine",
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_0c91fa2c9abf437e8e7a8af1a2a5d061);
+    var tile_layer_4804ee01e6c447289a27a34c274fbe49 = L.tileLayer(
+        'https://earthengine.googleapis.com/v1alpha/projects/earthengine-legacy/maps/b4f0dd1250d1cd5a51972578ef30eead-6398d68d66efa08c4fea9048e0f52aa7/tiles/{z}/{x}/{y}',
+        {
+        "attribution": "Map Data \u00a9 Google Earth Engine",
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_0c91fa2c9abf437e8e7a8af1a2a5d061);
+    
+            var layer_control_ad934e33e69b46f590e9300db1228221 = {
+                base_layers : { "openstreetmap" : tile_layer_c9e47c9ab9df408b9588497284753c13, },
+                overlays : { "Mean Aerosol Optical Depth" : tile_layer_d80d81c9ea10419b99154b1d79f11e05,"Global Surface Temp" : tile_layer_4804ee01e6c447289a27a34c274fbe49, }
+                };
+            L.control.layers(
+                layer_control_ad934e33e69b46f590e9300db1228221.base_layers,
+                layer_control_ad934e33e69b46f590e9300db1228221.overlays,
+                {position: 'topright',
+                 collapsed: true,
+                 autoZIndex: true
+                }).addTo(map_0c91fa2c9abf437e8e7a8af1a2a5d061);
+            
+        
+</script>
